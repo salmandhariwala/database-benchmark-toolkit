@@ -1,0 +1,13 @@
+LocalCurrencyCode = FXRateBase
+
+SecurityCode = MarketPriceBase
+
+PositionKey = TradeQuantity
+
+marketvaluebase
+
+upsert into pls1(pk,FXRateBase) values ('1',69696)
+
+CREATE INDEX fxindex ON pls1 (LocalCurrencyCode);
+CREATE INDEX priceindex ON pls1 (SecurityCode);
+CREATE INDEX tradeindex ON pls1 (PositionKey);
